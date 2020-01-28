@@ -1,7 +1,7 @@
-class NegociacoesView{
+class NegociacoesView extends View{
 
-    constructor(elemento){
-        this.elemento = elemento;
+    constructor(elemento) {
+        super(elemento);
     }
 
      _template(model) {
@@ -38,9 +38,5 @@ class NegociacoesView{
                         </td>
                     </tfoot>
                 </table>`;
-     }
-
-     update(model){
-         this.elemento.innerHTML = this._template(model);
      }
  }
